@@ -1,0 +1,19 @@
+.paragraph {
+    background-color: hsl(350, 80%, 83%);
+    font-family: Verdana, sans-serif;
+}
+
+#num2 {
+    color: #4884fc;
+    font-size: 36px;
+}
+
+.font24 {
+    font-size: 24px;
+}
+
+#num4 {
+    background-color: rgb(138, 218, 184);
+    font-size: 24px;
+    font-weight: bold;
+}
