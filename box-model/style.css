@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.box-one,
+.box-three {
+    background-color: #eb5757;
+    padding: 50px;
+    margin: 50px 100px;
+    border: 20px solid #9B51E0;
+    display: inline-block;
+    width: 240px;
+    height: auto;
+}
+
+.box-two,
+.box-four {
+    background-color: #2D9CDB;
+    border: 20px solid #27AE60;
+    padding: 50px;
+    margin: 50px;
+    display: inline-block;
+    width: 240px;
+    height: auto;
+}
