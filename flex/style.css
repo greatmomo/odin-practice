@@ -1,6 +1,13 @@
 .flex-container {
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
+    border: 4px solid indigo;
+    padding: 16px;
+    background-color: plum;
+    /*justify-content: space-between;*/
+    align-items: center;
+    height: 300px;
+    gap: 8px;
   }
   
   /* this selector selects all divs inside of .flex-container */
@@ -8,8 +15,8 @@
     background: peachpuff;
     border: 4px solid brown;
     height: 100px;
-    width: 250px;
-    flex: 1 1 auto;
+    width: 100px;
+    /*flex: 1 1 auto;*/
   }
   
   /* only div.two is selected here */
