@@ -7,20 +7,26 @@
     <title>JavaScript Practice!</title>
 </head>
 <body>
-    <button>Press me</button>
-
     <script>
-        // Conditionals 2
+        // Conditionals 3
 
-
-
-        //let a = 0
-        //alert(Boolean(a))
-        //let b = "0"
-        //alert(Boolean(b))
-        //alert(a === b) // strict equality is false
-
-        //alert(null === undefined) // false because they are different types
+        let userName = prompt("Enter login: ")
+        
+        if (userName == "Admin") {
+            let password = prompt("Enter password: ")
+            
+            if (password == "TheMaster") {
+                alert("Welcome!")
+            } else if (password == "" || password == null) {
+                alert("Canceled")
+            } else {
+                alert("Wrong password")
+            }
+        } else if (userName == "" || userName == null) {
+            alert("Canceled")
+        } else {
+            alert("I don't know you")
+        }
     </script>
 </body>
 </html>
