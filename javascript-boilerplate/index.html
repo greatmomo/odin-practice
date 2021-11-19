@@ -14,75 +14,21 @@
     </select>
 
     <h1>This is my website</h1>
+
+    <section class="preview">
+
+    </section>
     <script>
-        // JavaScript Developer Tools
+        //Functions 4 + 5
 
-        // Get number corresponding to the current month, with 0 being January and 11 being December
-        const month = new Date().getMonth();
+        //checkAge(prompt('Please enter your age!'))
 
-        switch (month) {
-            // January, February, March
-            case 0:
-            case 1:
-            case 2:
-                console.log("Winter")
-                break
-            // April, May, June
-            case 3:
-            case 4:
-            case 5:
-                console.log("Spring")
-                break
-            // July, August, September
-            case 6:
-            case 7:
-            case 8:
-                console.log("Summer")
-                break
-            // October, November, December
-            case 9:
-            case 10:
-            case 11:
-                console.log("Autumn");
-                break
-            default:
-                console.log("Something went wrong.")
+        function checkAge(age) {
+            // return (age > 18) ? true : confirm('Did parents allow you?')
+            return (age > 18) || confirm('Did parents allow you?')
         }
 
-        let message
-        let login = "Director"
-
-        message = login === `Employee` ? `Hello` :
-            login === `Director` ? `Greetings` :
-            login === "" ? `No login` : ``
-/*
-        alert(message)
-
-
-        let result
-
-        let a = 2
-        let b = prompt(`Enter a value`)
-        result = a + +b < 4 ? `Below` : `Over`
-
-        alert(result)
-
-        let input = prompt("Enter a number")
-
-        if (input > 0) {
-            alert(1)
-        } else if (input < -1) {
-            alert(-1)
-        } else {
-            alert(0)
-        }
-
-
-        if (prompt(`What is the "Official" name of JavaScript?`) === "ECMAScript") {
-            alert(`Right!`)
-        } else {
-            alert(`You don't know? ECMAScript!`)
-        }*/
+        alert(checkAge)
     </script>
 </body>
 </html>
