@@ -15,24 +15,38 @@
 
     <h1>This is my website</h1>
 
-    <section class="preview">
+    <section id="preview">
 
     </section>
     <script>
-        // Clean Code
+        // Fundamentals 4: Arrays
 
-        const a = "Hello"
-        const b = "World"
+        //const cars = ["Saab", "Volvo", "BMW"];
+        let cars = new Array("Saab", "Volvo", "BMW");
 
-        function add() {
-            return c;
+        function myFunction(value) {
+            console.log(value);
         }
 
-        function print() {
-            add();
-        }
+        cars.forEach(myFunction);
+        const otherCars = ["Ford", "Skoda"];
+        cars = cars.concat(otherCars);
+        cars.sort();
+        cars.forEach(myFunction);
 
-        print();
+        console.log(cars instanceof Array);
+
+        // push, pop, shift, and unshift are better than delete!0
+        //console.log(cars.push("Ferrari"));
+        //console.log(cars.shift());
+
+        cars.splice(2, 0, "Banana", "Kiwi"); // Adds elements without replacing
+        //cars.splice(2, 2); // Replaces elements without adding
+        let fruits = cars.slice(2, 4);
+        console.log(fruits);
+
+        document.getElementById("preview").innerHTML = "Here are some car manufacturers: "
+        document.getElementById("preview").innerHTML += cars.join(" ");
     </script>
 </body>
 </html>
