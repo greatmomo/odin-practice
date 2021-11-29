@@ -2,15 +2,18 @@
 
 const container = document.querySelector('#container');
 
+// div
 const content = document.createElement('div');
 content.classList.add('content');
 content.textContent = 'This is the glorious text-content!';
 
+// p
 const para = document.createElement('p');
 para.classList.add('paragraph');
 para.textContent = `Hey I'm red!`;
 para.style.color = 'red';
 
+// nested div
 const blackPink = document.createElement('div');
 blackPink.classList.add('double-div');
 blackPink.style.backgroundColor = 'pink';
@@ -24,6 +27,17 @@ blackPinkp.textContent = `ME TOO!`;
 blackPink.appendChild(blackPinkH1);
 blackPink.appendChild(blackPinkp);
 
+// appends
 container.appendChild(content);
 container.appendChild(para);
 container.appendChild(blackPink);
+
+function alertFunction() {
+    alert("YAY! YOU DID IT!");
+}
+
+// button listener/onclick
+const btn = document.querySelector('#btn');
+//btn.onclick = alertFunction;
+btn.addEventListener('click', alertFunction);
+//btn.onclick = () => alert("Hello World!");
