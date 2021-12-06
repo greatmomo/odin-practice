@@ -1,4 +1,4 @@
-// DOM Manipulation - Practice next
+// Fundamentals Part 5 - Objects
 
 const container = document.querySelector('#container');
 
