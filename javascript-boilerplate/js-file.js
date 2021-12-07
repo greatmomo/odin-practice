@@ -1,4 +1,4 @@
-// Fundamentals Part 5 - Objects
+// Fundamentals Part 5 - Intermediate/Advanced Array Magic
 
 const container = document.querySelector('#container');
 
